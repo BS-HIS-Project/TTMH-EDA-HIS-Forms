@@ -5,21 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HIS Prescription</title>
         <link rel="stylesheet" href="./../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="./../wwwroot/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="./../wwwroot/css/form.css" />
         <!--CSS Test....................................................................-->
         <style>
             .bd1 {
                 border: 3px solid blue;
             }
-
             .bd2 {
                 border: 3px solid red;
             }
-
             .bd3 {
                 border: 3px solid green;
             }
-
             .bd4 {
                 border: 3px solid yellow;
             }
@@ -33,7 +30,7 @@
     <body>
         <main>
             <div class="container">
-                <div class="row ED-A4_paper">
+                <div class="row FM-dimension-A4_paper">
                     <div class="row">
                         
     
@@ -43,71 +40,108 @@
                             </div>
                         </div>
     
-                        <div class="ED-Form-Prescription-border">
+                        <div class="FM-bd-Prescription">
     
                             <div class="row">
-                                <div class="text-danger ED-bigger-title1 py-1">領藥號 : A1907</div>
+                                <div class="text-danger py-3 ps-4 FM-fs-30">領藥號 : #ChaID</div>
                             </div>
     
-                            <div class="ED-hr"></div>
+                            <div class="FM-hr-3 FM-bg-secondary"></div>
     
-                            <div class="row">
-                                <div class="col-4 py-2">
-                                    <div class="ED-bigger-context">病例編號 : 185</div>
+                            <div class="row py-2">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-6 py-3">
+                                            病例編號：
+                                        </div>
+                                        <div class="FM-fs-20 col-6 py-3">
+                                            #PatientID
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-7 py-3">
+                                            出生年月日：
+                                        </div>
+                                        <div class="FM-fs-20 col-5 py-3">
+                                            #BirthDate
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-6 py-3">
+                                            看診醫生：
+                                        </div>
+                                        <div class="FM-fs-20 col-6 py-3">
+                                            #DName
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-4 py-2">
-                                    <div class="ED-bigger-context">病患姓名 : 露露</div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-6 py-3">
+                                            病患姓名：
+                                        </div>
+                                        <div class="FM-fs-20 col-6 py-3">
+                                            #PName
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-4 py-3">
+                                            年齡：
+                                        </div>
+                                        <div class="FM-fs-20 col-8 py-3">
+                                            #Year
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-6 py-3">
+                                            看診日期：
+                                        </div>
+                                        <div class="FM-fs-20 col-6 py-3">
+                                            #Vdate
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-3 py-2">
-                                    <div class="ED-bigger-context">性別 : 女</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-2">
-                                    <div class="ED-bigger-context">出生年月日 : 1999/06/07</div>
-                                </div>
-                                <div class="col-3 py-2">
-                                    <div class="ED-bigger-context">年齡 : 24</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4 py-2">
-                                    <div class="ED-bigger-context">看診醫生 : 王大東</div>
-                                </div>
-                                <div class="col-5 py-2">
-                                    <div class="ED-bigger-context">看診日期 : 2023/05/02</div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="FM-fs-20 FM-fg-secondary col-6 py-3">
+                                            性別：
+                                        </div>
+                                        <div class="FM-fs-20 col-6 py-3">
+                                            Male
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="ED-hr"/>
+                            <div class="FM-hr-3 FM-bg-secondary"></div>
     
-                            <div class="row mt-1">
-                                <div class="ED-bigger-title2 pt-2">
+                            <div class="row mt-2">
+                                <div class="FM-fs-25 py-2 FM-fg-secondary">
                                     診斷
                                 </div>
                             </div>
     
                             <div class="row">
-                                <div class="col ED-bigger-context text-black" style="height:260px;">
+                                <div class="col FM-fs-20 text-black" style="height:250px;">
                                     Lorem ipsum dolor sit amet sconsectetur adipisicing elit. Officiis sunt, consectetur rerum sequi magnam consequatur nulla fugiat sit molestiae, nesciunt assumenda quo tempore voluptates! Ab ad cum distinctio asperiores consequatur!
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit
                                 </div>
                             </div>
     
                             <div class="row">
-                                <div class="ED-bigger-title2 ">
+                                <div class="FM-fs-25 py-2 FM-fg-secondary">
                                     藥品
                                 </div>
                             </div>
     
                             <div class="row">
-                                <div class="col ED-bigger-context text-black" style="height:240px;">
+                                <div class="col FM-fs-20 text-black" style="height:270px;">
                                     Lorem ipsum dolor sit amet sconsectetur adipisicing elit. Officiis sunt, consectetur rerum sequi magnam consequatur nulla fugiat sit molestiae, nesciunt assumenda quo tempore voluptates! Ab ad cum distinctio asperiores consequatur!
                                 </div>
                             </div>
     
                             <div class="row d-flex flex-row-reverse">
-                                <div class="col-4 ED-bigger-context text-end">
+                                <div class="col-4 FM-fs-20 text-start FM-fg-secondary">
                                     藥劑師 : 李小熊
                                 </div>
                             </div>
