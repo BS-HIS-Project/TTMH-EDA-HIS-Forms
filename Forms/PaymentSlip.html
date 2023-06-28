@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HIS Prescription</title>
+        <title>HIS PaymentSlip</title>
         <link rel="stylesheet" href="./../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./../wwwroot/css/form.css" />
         <!--CSS Test....................................................................-->
@@ -23,6 +23,7 @@
         </style>
         <style>
 
+
         </style>
         <!--............................................................................-->
     </head>
@@ -38,7 +39,12 @@
                         </div>
                         <div class="FM-bd-Prescription">
                             <div class="row">
-                                <div class="text-danger py-3 ps-4 FM-fs-30">領藥號 : #ChaID</div>
+                                <div class="col-5 text-danger py-3 ps-4 FM-fs-30">
+                                    領藥號 : #ChaID
+                                </div>
+                                <div class="col-7 text-danger py-3 ps-4 FM-fs-30">
+                                    繳費條號： #xxx
+                                </div>
                             </div>
                             <div class="row py-2 FM-hr-top_bottom">
                                 <div class="col">
@@ -110,26 +116,72 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col FM-fs-20 text-black" style="height:250px;">
+                                <div class="col FM-fs-20" style="height:150px;">
                                     Lorem ipsum dolor sit amet sconsectetur adipisicing elit. Officiis sunt, consectetur rerum sequi magnam consequatur nulla fugiat sit molestiae, nesciunt assumenda quo tempore voluptates! Ab ad cum distinctio asperiores consequatur!
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="FM-fs-25 py-2 FM-fg-secondary">
-                                    藥品
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col FM-fs-20 text-black" style="height:270px;">
-                                    Lorem ipsum dolor sit amet sconsectetur adipisicing elit. Officiis sunt, consectetur rerum sequi magnam consequatur nulla fugiat sit molestiae, nesciunt assumenda quo tempore voluptates! Ab ad cum distinctio asperiores consequatur!
-                                </div>
-                            </div>    
-                            <div class="row d-flex flex-row-reverse">
-                                <div class="col-3 FM-fs-20 text-start FM-fg-secondary">
-                                    藥劑師 : 李小熊
-                                </div>
-                            </div>    
+                            <table class="FM-table-PaymentSlip-drugs row" style="width:100%;border-top:3px solid #015958;">
+                                <thead>
+                                    <tr>
+                                        <th>藥品名稱</th>
+                                        <th>用法</th>
+                                        <th>次量</th>
+                                        <th>天數</th>
+                                        <th>總量</th>
+                                        <th>自費</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="FM-hr-top_bottom" style="height:260px;">
+                                    <tr>
+                                        <td>asddas</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                    </tr>
+                                    <tr>
+                                        <td>asddas</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                    </tr>
+                                    <tr>
+                                        <td>asddas</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                    </tr>
+                                    <tr>
+                                        <td>asddas</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                        <td>dfsdf</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="FM-table-PaymentSlip-signs mt-2" style="width:97%;">
+                                <tr>
+                                    <td>醫師章</td>
+                                    <td>批價章</td>
+                                    <td>藥師章</td>
+                                    <td>預估應繳金額</td>
+                                </tr>
+                                <tr style="height: 95px;">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+    
                         </div>
                     </div>
                 </div>
